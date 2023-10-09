@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <svg width="300" height="200" viewBox="0 0 300 200">
+        <rect x="5" y="5" width="290" height="190" fill="url(#bgGradient)" />
+        <text x="45" y="75" fill="#000" fill-opacity="0.3" font-size="40" font-family="Lobster" textlength="220" lengthAdjust="spacingAndGlyphs">the Breaking
+        </text>
+        <rect x="1" y="1" width="298" height="198" stroke="#ccc" stroke-width="2" stroke-dasharray="5" fill="none"/>
+        <text x="40" y="70" fill="#f4b400" font-size="40" font-family="Lobster" textlength="220"
+            lengthAdjust="spacingAndGlyphs" stroke="#fff">the Breaking
+        </text>
+        <defs>
+            <linearGradient id="bgGradient" x1="25%" x2="35%" spreadMethod="repeat">
+                <stop offset="50%" stop-color="#b1dcf1" />
+                <stop offset="50%" stop-color="#7dc4e8" />
+            </linearGradient>
+        </defs>
+        <text x="80" y="165" fill="#000" fill-opacity="0.3" font-size="80" font-family="Lobster" 
+            textlength="140" lengthAdjust="spacingAndGlyphs">Bad
+        </text>
+        <text x="75" y="160" fill="#ff401a" font-size="80" font-family="Lobster" 
+            stroke="#fff" textlength="140"
+            lengthAdjust="spacingAndGlyphs" stroke-width="3">Bad
+        </text>
+        <defs>
+            <pattern id="circle" x="0" y="0" width="10" height="10" 
+                patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="4" r="2" fill="#fff"/>
+            </pattern>
+        </defs>
+        <polygon points="60,100 240,100 240,180 60,180" fill="url(#circle)" 
+            clip-path="url(#bad)"/>
+        <clipPath id="bad">
+            <text x="75" y="160" fill="#ff401a" font-size="80" 
+                font-family="Lobster" stroke="#fff"
+                stroke-width="3" textlength="140">Bad
+            </text>
+        </clipPath>
+    </svg>
+</body> 
+
+</html>
